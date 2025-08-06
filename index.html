@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Chamada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Histórico (aside esquerdo com grid) -->
+    <aside class="historico">
+      <h2>Histórico de Chamadas</h2>
+      <ul id="listaHistorico">
+        <!-- Preenchido dinamicamente -->
+      </ul>
+    </aside>
+
+        <!-- Painel central -->
+    <main class="painel">
+      <h1>Senha: <span id="senha">---</span></h1>
+      <p>Paciente: <span id="paciente">---</span></p>
+      <p>Médico: <span id="medico">---</span></p>
+      <p>Sala: <span id="sala">---</span></p>
+      <button onclick="chamarSenha()">Chamar Senha</button>
+      </main>
+    </div>
+    
+  
+  <!-- Som de chamada -->
+  <audio id="somChamada" src="ding.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
